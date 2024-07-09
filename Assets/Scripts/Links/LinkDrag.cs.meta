@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: b42a8ae3b38710f4bb5bf5f97214f135
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - _UIData: {fileID: 11400000, guid: b74e631ce2cbaf84ea29db9834169c51, type: 2}
+  - Link_Colour: {instanceID: 0}
+  - Profile: {instanceID: 0}
+  - Banner: {instanceID: 0}
+  - Nexus: {instanceID: 0}
+  - particle: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
