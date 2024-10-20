@@ -17,11 +17,11 @@ Enchanter is a strategic card-based deck-building game where players take turns 
 
 | Location |  Script       | Description                                                  |
 |-----| ------- | ------------------------------------------------------------ |
-|DataPersistence| `DataManager.cs` | Manages data storage and data distribution towards the interfaces. |
-|DataPersistence| `DataHandler.cs` | Handles the save and loading system for the game. |
-|Gameplay| `Inventory.cs` | Stores picture data and its detail for further uses during gameplay. |
-|Manager| `UIManager.cs`  | Manages pausing and various UI element functions. |
-|Underwater| `ScreenshotHandler.cs`  | Handles screenshot and also album creating. |
+| Link| `LinkDisplay.cs` | Handles card displaying and is connected through inheritence towards other card variants |
+| Manager | `TargetManager.cs` | Manages targetting system that collects all targetable entities in the scene. |
+| Deck | `Deck.cs` | Stores and manages card for data retrieving. |
+| Enemy | `Enemy.cs`  | Handles the enemy logic on how they would behave |
+| Manager | `GameManager.cs`  | Manages the flow of the game, card drawing, turn system and more. |
 | | `etc`  | |
 <br>
 
@@ -49,8 +49,7 @@ Enchanter is a strategic card-based deck-building game where players take turns 
    - Future Plans:
        - using a procedural approach to determine cards that should be played as data
        - using pointing system to determine which targets should this card be used onto
-
-
+</details>
 <details>
   <summary>What i learned</summary>
 
@@ -68,15 +67,14 @@ Enchanter is a strategic card-based deck-building game where players take turns 
 ## 📂Files description
 
 ```
-├── Aquarencia                       # Folder containing all the Unity project files, to be opened by a Unity Editor
-   ├── ...
+├── Enchanter                       # Folder containing all the Unity project files, to be opened by a Unity Editor
+ ├── ...
    ├── Assets                        # Folder containing all code, assets, scenes, etc used for development. This was not automatically created by Unity
-      ├── ...
-      ├── Scenes                     # Folder containing several scenes that you can open and play the game via Unity
-      ├── Script                     # Folder containing all the scripts related to making the game
-      ├── ....
-   ├── ...
-      
+    ├── 2.0 Scripts                # Folder containing all the reformed scripts made related to the game
+    ├── ...
+    ├── Scenes                     # Folder containing several scenes that you can open and play the game via Unity
+    ├── Scripts                    # Folder containing all the old scripts related to making the game
+   ├── ....
 ```
 <br>
 
