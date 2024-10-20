@@ -4,8 +4,8 @@ using UnityEngine.UI;
 public class CharacterHUD : MonoBehaviour
 {
     [Header("UI Options")]
-    public Slider Player_HP;
-    public Slider Player_MP;
+    [SerializeField] private Slider Player_HP;
+    [SerializeField] private Slider Player_MP;
     public Image profil;
 
     private float hp;
@@ -16,6 +16,7 @@ public class CharacterHUD : MonoBehaviour
         {
             hp = Mathf.Clamp(value, 0, MaxHP);
             Player_HP.value = hp / MaxHP;
+            //Debug.Log(maxhp + "out of " +  hp);
         }
     }
     private float maxhp;
@@ -23,7 +24,8 @@ public class CharacterHUD : MonoBehaviour
     {
         get { return maxhp; } 
         set { 
-            maxhp = value; 
+            maxhp = value;
+            //Player_HP.maxValue = value;
             HP = value;
         } 
     }
@@ -34,6 +36,7 @@ public class CharacterHUD : MonoBehaviour
         set
         {
             maxmp = value;
+            //Player_MP.maxValue = value;
             MP = value;
         }
     }

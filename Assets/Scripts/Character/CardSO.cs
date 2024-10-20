@@ -4,8 +4,8 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New", menuName = "Card", order = 1)]
 public class CardSO : ScriptableObject
 {
-    public string char_name;
-    public Sprite char_sprite;
+    public string Name;
+    public Sprite sprite;
     //keep links so that they can be generated upon starting a battle
     public List<LinkSO> links;
 
@@ -18,5 +18,7 @@ public class CardSO : ScriptableObject
     public int mana_max = 100;
     public int atk, magatk, def, dex;
 
+    [ArrayElementTitle("animationName")]
+    public List<AnimationInformation> anim_info;
     #endregion 
 }

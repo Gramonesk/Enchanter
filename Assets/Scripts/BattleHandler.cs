@@ -7,33 +7,68 @@ using UnityEngine;
 /// </summary>
 public class BattleHandler
 {
-    public static List<DeployData> Player_Deploydata = new();
-    public static List<DeployData> Enemy_Deploydata = new();
-
-    public static IEnumerator QueueRun()
-    {
-        yield return new WaitUntil(() => Enemy_Deploydata.Count > 0 && Player_Deploydata.Count > 0);
-        yield return Run();
-        Enemy_Deploydata.Clear();
-        Player_Deploydata.Clear();
-    }
-    public static IEnumerator Run()
+    public static List<DeployData> Player_Deploydata;
+    public static List<DeployData> Enemy_Deploydata;
+    //public static void Run()
+    //{
+    //    var PlayerCount = Player_Deploydata.Count;
+    //    var EnemyCount = Enemy_Deploydata.Count;
+    //    int index = PlayerCount < EnemyCount ? PlayerCount : EnemyCount;
+    //    for (int i = 0; i < index; i++)
+    //    {
+    //        if (i >= EnemyCount || ( i < PlayerCount && Player_Deploydata[i].link.user.Dexterity > Enemy_Deploydata[i].link.user.Dexterity))
+    //        {
+    //            Do(Player_Deploydata[i]);
+    //            Do(Enemy_Deploydata[i]);
+    //        }
+    //        else
+    //        {
+    //            Do(Enemy_Deploydata[i]);
+    //            Do(Player_Deploydata[i]);
+    //        }
+    //    }
+    //    for(int i = index; i < PlayerCount; i++)
+    //    {
+    //        Do(Player_Deploydata[i]);
+    //    }
+    //    for (int i = index; i < EnemyCount; i++)
+    //    {
+    //        Do(Enemy_Deploydata[i]);
+    //    }
+    //}
+    //static void Do(DeployData user)
+    //{
+    //    user.link.Activate(user.targets, user.IsAbility);
+    //}
+    public static IEnumerator RunCoroutine()
     {
         var PlayerCount = Player_Deploydata.Count;
         var EnemyCount = Enemy_Deploydata.Count;
-        int index = PlayerCount > EnemyCount ? PlayerCount : EnemyCount;
+        int index = PlayerCount < EnemyCount ? PlayerCount : EnemyCount;
         for (int i = 0; i < index; i++)
         {
-            if (i >= EnemyCount || ( i < PlayerCount && Player_Deploydata[i].data.user.Dexterity > Enemy_Deploydata[i].data.user.Dexterity))
+            if (i >= EnemyCount || (i < PlayerCount && Player_Deploydata[i].link.user.Dexterity > Enemy_Deploydata[i].link.user.Dexterity))
             {
-                yield return LinkHandler.Activate(Player_Deploydata[i], null);
-                yield return LinkHandler.Activate(Enemy_Deploydata[i], null);
+                yield return DoCoroutine(Player_Deploydata[i]);
+                yield return DoCoroutine(Enemy_Deploydata[i]);
             }
             else
             {
-                yield return LinkHandler.Activate(Enemy_Deploydata[i], null);
-                yield return LinkHandler.Activate(Player_Deploydata[i], null);
+                yield return DoCoroutine(Enemy_Deploydata[i]);
+                yield return DoCoroutine(Player_Deploydata[i]);
             }
         }
+        for (int i = index; i < PlayerCount; i++)
+        {
+            yield return DoCoroutine(Player_Deploydata[i]);
+        }
+        for (int i = index; i < EnemyCount; i++)
+        {
+            yield return DoCoroutine(Enemy_Deploydata[i]);
+        }
+    }
+    public static IEnumerator DoCoroutine(DeployData user)
+    {
+        yield return user.link.ActivateCTN(user.targets, user.isAbility);
     }
 }

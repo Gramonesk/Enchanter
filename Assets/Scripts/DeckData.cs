@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using UnityEditor.Animations;
 using UnityEngine;
 /// <summary>
 /// Dipake bwt reference Deck sendiri / deck musuh
@@ -11,4 +13,11 @@ public class DeckData : ScriptableObject
 
     [Header("Only fill for gameplay")]
     public List<LinkSO> Links;
+}
+[Serializable]
+public struct CharacterProfile
+{
+    public CardSO Character_Data;
+    public AnimatorController controller;
+    //public List<LinkSO> Links;
 }

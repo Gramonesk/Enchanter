@@ -1,10 +1,10 @@
-﻿using UnityEngine;
+﻿//using UnityEngine;
 
-public class Block : Effect
-{
-    public float ammount;
-    public override void Activate(Card user)
-    {
-        user.Block += ammount;
-    }
-}
+//public class Block : Effect
+//{
+//    public float ammount;
+//    public override void Activate(Card user)
+//    {
+//        user.Block += ammount;
+//    }
+//}

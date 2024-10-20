@@ -1,13 +1,4 @@
-﻿using UnityEngine;
-
-public class ManipHP : Effect
-{
-    public float ammount;
-    public override void Activate(Card user)
-    {
-        user.InflictDamage(ammount);
-    }
-}
+﻿
 //public class BuffHandler
 //{
 //    public static T New<T>(Func<T, T> SetData) where T : ScriptableObject

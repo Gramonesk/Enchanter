@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43f70604196b75d4ca7f504ed2c77a64, type: 3}
+  m_Name: Bee
+  m_EditorClassIdentifier: 
+  Name: Bee
+  sprite: {fileID: 1624008566, guid: 020573e43295bea46a17fcbfc1486214, type: 3}
+  links:
+  - {fileID: 11400000, guid: 8b57e05da0d8a444fb52dd2a697c70bb, type: 2}
+  - {fileID: 11400000, guid: 7047f17c8b715e74c83ba2c8c5583dd7, type: 2}
+  - {fileID: 11400000, guid: a869997d1514dea4ab195fc4dbfd2b6f, type: 2}
+  - {fileID: 11400000, guid: 92f0926e5648bcf43a274558755ce72e, type: 2}
+  - {fileID: 11400000, guid: 04247913914be25479ecc5d20a1cf258, type: 2}
+  Character_Category: 0
+  Leader_Type: 0
+  hp_max: 80
+  mana_max: 0
+  atk: 0
+  magatk: 0
+  def: 0
+  dex: 7
+  anim_info: []

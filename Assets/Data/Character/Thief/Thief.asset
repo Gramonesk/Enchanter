@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43f70604196b75d4ca7f504ed2c77a64, type: 3}
+  m_Name: Thief
+  m_EditorClassIdentifier: 
+  Name: Thief
+  sprite: {fileID: -567400039, guid: 9186dd77fffeed14da762d0893680598, type: 3}
+  links:
+  - {fileID: 11400000, guid: 469ebe4707672c849b3e54497c186185, type: 2}
+  - {fileID: 11400000, guid: 755cedeced525c444aaee2b7b7eb44bb, type: 2}
+  - {fileID: 11400000, guid: 755cedeced525c444aaee2b7b7eb44bb, type: 2}
+  - {fileID: 11400000, guid: 469ebe4707672c849b3e54497c186185, type: 2}
+  - {fileID: 11400000, guid: 469ebe4707672c849b3e54497c186185, type: 2}
+  Character_Category: 2
+  Leader_Type: 1
+  hp_max: 45
+  mana_max: 0
+  atk: 15
+  magatk: 0
+  def: 6
+  dex: 7
+  anim_info:
+  - animationName: 0
+    EffectTriggerFrameIndicator: 7
+    AnimationTotalFrames: 25

@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: caa6b20ba3f59d94a9109281ab36b1c4, type: 3}
+  m_Name: Stab
+  m_EditorClassIdentifier: 
+  Linker: 0
+  Nexus: 0
+  Basic:
+    animationName: 0
+    ManaUsed: 0
+    EffectDescription: Deals damage twice to the enemy
+    effects:
+    - effect: 0
+      Ammount: 3
+      usePercentage: 0
+      UseParameter: 0
+      TypeOfParameter: 0
+      Target_Effect: 1
+      LingerEffects: []
+    - effect: 0
+      Ammount: 3
+      usePercentage: 0
+      UseParameter: 0
+      TypeOfParameter: 0
+      Target_Effect: 1
+      LingerEffects: []
+    target_type: 1
+    attack_type: 1
+  Skill:
+    animationName: 0
+    ManaUsed: 0
+    EffectDescription: Deals damage thrice to the enemy
+    effects:
+    - effect: 0
+      Ammount: 4
+      usePercentage: 0
+      UseParameter: 0
+      TypeOfParameter: 0
+      Target_Effect: 1
+      LingerEffects: []
+    - effect: 0
+      Ammount: 4
+      usePercentage: 0
+      UseParameter: 0
+      TypeOfParameter: 0
+      Target_Effect: 1
+      LingerEffects: []
+    - effect: 0
+      Ammount: 4
+      usePercentage: 0
+      UseParameter: 0
+      TypeOfParameter: 0
+      Target_Effect: 1
+      LingerEffects: []
+    target_type: 1
+    attack_type: 1
