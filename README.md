@@ -1,6 +1,6 @@
 <h1>Enchanter</h1>
 
-![0709](https://github.com/Gramonesk/Enchanter/assets/154248035/41b20f66-24fe-476e-885b-ddab74e6b318)
+![Enchanter2](https://github.com/user-attachments/assets/6fa6e1f0-fa4c-440e-9244-6e17d80df5b0)
 
 ## 🔴 About Project
   This was my personal project that was oriented to a Gacha Deck-Building Strategy type of genre. The game idea initially was made due to my superimposed imagination seemingly describing a fantasy story. The whole mechanic of this game was made as a mix of several games mechanics i played prior to this game. This project is still in further development for optimization and ideation.
