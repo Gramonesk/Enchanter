@@ -50,14 +50,12 @@ Enchanter is a strategic card-based deck-building game where players take turns 
 
 <details>
   <summary>What i learned</summary>
-  <br>
-Overall i developed all my code structuring skills
-I learned a lot about profiling, optimizing and handling memory when it comes to making this project which was a personal interest for me. Throughout the process of making this project, i spend a lot of effort and gained experience in understanding on how to make my code a lot more flexible and enabled me to modify, extend it easily with new features needed.
-</br></br>
- However, i also learned to adopt a more practical approach on making code that is necessary and refactor it later when needed to increase my efficiency on my making process
-</details>
 
+- As the game was more data-structure oriented and also was the game made with personal interest, the development process took way longer which taught me a lot in terms of Game Designing and Program designing. In terms of program designing skills, i learned to use or utilize making a class diagram first before making the mechanic, this is to make the code more modular and open.
+- Through the process, i learned to identify the base mechanics of the game. As an example, a notable game "Yu-Gi-OH" have effects mechanics such that they have a trigger effect like [On Draw] [On Discard] effects. These effects are modifications subsequently to the main effect of the base mechanics of the card. Even as a game programmer, knowing this would save me alot of times from disambiguation and long-term thinking. This is why most programmers tend to ask the designers regarding such mechanics in which to reassure the mechanics given to him. 
+- From this knowledge i also learned that making a design document and managing tasks are the most important aspect of game developing because it points out what was necessary at the current time. Even then when making these mechanics, i would still make the codes simple; open for modification and future uses.
 <br>
+</details>
 
 ## 📂Files description
 
@@ -75,15 +73,7 @@ I learned a lot about profiling, optimizing and handling memory when it comes to
 <br>
 
 ## 🕹️ Controls
-<table width ="100%">
-  <td> 
-    
-![Aquarencia Controls1](https://github.com/user-attachments/assets/63c78467-7f67-418b-8088-4257111cdd26)
-    
-  </td>
-  <td> 
-    
-![Aquarencia Controls2](https://github.com/user-attachments/assets/e24c1d35-0a8d-4f6e-84d4-890c7d6552f7)
-    
-  </td>
-</table>
+| Function | KeyCode |
+|:---:|:---:|
+| LMB | interact |
+| Esc | Menu |
