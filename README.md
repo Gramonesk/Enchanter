@@ -9,7 +9,6 @@
 * Editor Version : Unity 2022.3.29f1
 
 * My Contribution : Overall (Ideation, Design, Story, Mechanics, Art [Not Applied Yet] )
-<br>
 
 ## 🕹️ About Game
 Enchanter is a strategic card-based deck-building game where players take turns attacking opponents based on the speed of their characters. Each decision impacts the flow of battle, creating a dynamic and engaging gameplay experience.
