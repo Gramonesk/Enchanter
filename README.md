@@ -28,30 +28,39 @@ Enchanter is a strategic card-based deck-building game where players take turns 
 <details>
   <summary>More Details</summary>
   
-1. **Data Persistence**
-   - using JSON, filestream and furthermore using generics and interfaces to make it modular and appliable for all my other projects, this mechanics allows me to save data ex: string datas, pictures and more
-   - using inventory system that retrieves data i saved either by singleton referencing or straight from loading the game so that the photo data can be used to sell and display what was taken before 
-3. **Screen snapping and game resolution**
-    - used for taking photos of the sea turtles and saving it, this also scales with the game resolution so that it wont break the game
-4. **Design Patterns**
-    - using an Invoker so gameplay feels robust especially when interacting with the pause menu or UI
-5. **Navigation mesh**
-    - using a navmesh to make the npc move and interact with the environment to make the gameplay feel more filled.
-6. **URP POST-PROCESSING**
-    -  Implimentation of post-processing effects in unity
-    -  Lights 2D used for improved visual
-7. **Object pooling**
-   - using an object pooling to reduce memory buffer and also a large performance boost on the game
-8. **State Machine Pattern**
-   - using statemachine to control states pattern and reduce potential bug threats on the game.
-</details>
+1. **Post Processing**
+   - using shader graph and blooming to create the glow effect exclusively on the fire orbs
+   - using color grading and white balance to make the visual look more engaging
+
+3. **Object Oriented Programming**
+    - using object oriented programming on the card datas, allowing open modifications for effects
+    
+4. **Event System**
+    - using events, like delegates or scriptable objects to trigger events that would activate an effect
+    
+5. **Scriptable Objects**
+    - using scriptable objects, as the main data to store the cards data and also their Effect Functionality improving overall memory management
+    
+6. **Particle System**
+   - using a customly made particle system to create the visuals for the cards.
+
+8. **AI / Enemy behaviour**
+   - currently using a simple longest sequence searching with a DFS like approach by using recursion using the enemy's hand as data.
+   - Future Plans:
+       - using a procedural approach to determine cards that should be played as data
+       - using pointing system to determine which targets should this card be used onto
 
 
 <details>
   <summary>What i learned</summary>
 
-- As the game was more data-structure oriented and also was the game made with personal interest, the development process took way longer which taught me a lot in terms of Game Designing and Program designing. In terms of program designing skills, i learned to use or utilize making a class diagram first before making the mechanic, this is to make the code more modular and open.
-- Through the process, i learned to identify the base mechanics of the game. As an example, a notable game "Yu-Gi-OH" have effects mechanics such that they have a trigger effect like [On Draw] [On Discard] effects. These effects are modifications subsequently to the main effect of the base mechanics of the card. Even as a game programmer, knowing this would save me alot of times from disambiguation and long-term thinking. This is why most programmers tend to ask the designers regarding such mechanics in which to reassure the mechanics given to him. 
+- As the game was more data-structure oriented and also was the game made with personal interest, the development process took way longer which taught me a lot in terms of Game Designing and Program designing. In terms of program designing skills, i learned to utilize class diagram first beforehand; allowing a good code management and easier code execution as i don't need to think much further during the development process.
+- Through the process, i learned to identify the base mechanics of the game. As an example, a notable game "Yu-Gi-OH" have effects mechanics such that they have a trigger effect like [On Draw] [On Discard] effects. These effects are modifications subsequently to the main effect of the base mechanics of the card.
+
+| Detailed Explanation |
+|----|
+| As in the following problem, we would be thinking more and more into the implication of this type of unique implimentation. Assuming that we had started class designing and determining the base class, all of these couldve been done with using OOP (Object Oriented Programming) and event system implimentation. Even as a game programmer, knowing this would save me alot of times from disambiguation and deep consideration. |
+ 
 - From this knowledge i also learned that making a design document and managing tasks are the most important aspect of game developing because it points out what was necessary at the current time. Even then when making these mechanics, i would still make the codes simple; open for modification and future uses.
 <br>
 </details>
