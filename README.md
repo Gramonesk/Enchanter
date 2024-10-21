@@ -3,15 +3,17 @@
 ![Enchanter2](https://github.com/user-attachments/assets/6fa6e1f0-fa4c-440e-9244-6e17d80df5b0)
 
 ## 🔴 About Project
+Enchanter is a strategic card-based deck-building game where players take turns attacking opponents based on the speed of their characters. Each decision impacts the flow of battle, creating a dynamic and engaging gameplay experience.
+<br>
   This was my personal project that was oriented to a Gacha Deck-Building Strategy type of genre. The game idea initially was made due to my superimposed imagination seemingly describing a fantasy story. The whole mechanic of this game was made as a mix of several games mechanics i played prior to this game. This project is still in further development for optimization and ideation.
+<br>
 
 ## 📋 Project Info 
 * Editor Version : Unity 2022.3.29f1
 
 * My Contribution : Overall (Ideation, Design, Story, Mechanics, Art [Not Applied Yet] )
 
-## 🕹️ About Game
-Enchanter is a strategic card-based deck-building game where players take turns attacking opponents based on the speed of their characters. Each decision impacts the flow of battle, creating a dynamic and engaging gameplay experience.
+<br>
 
 ## 📜 Scripts and Features
 
