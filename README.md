@@ -55,7 +55,7 @@ Enchanter is a strategic card-based deck-building game where players take turns 
 <details>
   <summary>What i learned</summary>
 
-- As the game was more data-structure oriented and also was the game made with personal interest, the development process took way longer which taught me a lot in terms of Game Designing and Program designing. In terms of program designing skills, i learned to utilize class diagram first beforehand; allowing a good code management and easier code execution as i don't need to think much further during the development process.
+- As the game was more data-structure oriented and also made with personal interest, the development process took way longer which taught me a lot in terms of Game Designing and Program designing. In terms of program designing skills, i learned to utilize class diagram first beforehand; allowing a good code management and easier code execution as i don't need to think much further during the development process.
 - Through the process, i learned to identify the base mechanics of the game. As an example, a notable game "Yu-Gi-OH" have effects mechanics such that they have a trigger effect like [On Draw] [On Discard] effects. These effects are modifications subsequently to the main effect of the base mechanics of the card.
 
 | Detailed Explanation |
